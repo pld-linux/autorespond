@@ -1,0 +1,44 @@
+diff -Nur autorespond-2.0.2/Makefile autorespond-2.0.2.mod/Makefile
+--- autorespond-2.0.2/Makefile	2001-11-27 20:25:04.000000000 +0100
++++ autorespond-2.0.2.mod/Makefile	2004-08-06 00:21:36.558091618 +0200
+@@ -14,8 +14,10 @@
+ INSTALL_UID = root
+ INSTALL_GID = root
+ 
+-all:
+-	$(CC) $(DEFS) -o autorespond autorespond.c
++all: autorespond
++
++autorespond: autorespond.c
++	$(CC) $(DEFS) $^ -o $@
+ 
+ install: all
+ 	@echo "Installing..."
+diff -Nur autorespond-2.0.2/autorespond.c autorespond-2.0.2.mod/autorespond.c
+--- autorespond-2.0.2/autorespond.c	2001-11-30 20:12:23.000000000 +0100
++++ autorespond-2.0.2.mod/autorespond.c	2004-08-06 00:20:43.172754567 +0200
+@@ -117,6 +117,7 @@
+ 		/*exit...no memory*/
+ 		_exit(111);
+ 	}
++	memset(ptr,0,size);
+ 
+ 	return ptr;
+ }
+@@ -571,8 +572,14 @@
+ 		_exit(111);
+ 	}
+ 
+-	strcpy(TheUser, getenv("EXT") );
+-	strcpy(TheDomain, getenv("HOST") );
++	memset(TheUser, ' ', MAX_BUFF);
++	memset(TheDomain, ' ', MAX_BUFF);
++
++	if(getenv("EXT") != NULL) 
++		strncpy(TheUser, getenv("EXT") , MAX_BUFF -1);
++
++	if(getenv("HOST") != NULL) 
++		strncpy(TheDomain, getenv("HOST") , MAX_BUFF -1);
+  
+ 	setvbuf(stderr, NULL, _IONBF, 0);
+ 
