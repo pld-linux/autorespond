@@ -39,7 +39,9 @@ masowe pierwszeñstwo nag³ówków, itp.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{rpmcflags} -D_REENTRANT"
+%{__make} \
+	CFLAGS="%{rpmcflags} -D_REENTRANT" \
+	CC=%{__cc}
 
 %install
 rm -rf $RPM_BUILD_ROOT
