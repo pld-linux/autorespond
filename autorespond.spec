@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.inter7.com/devel/%{name}-%{version}.tar.gz
+# Source0-md5:	aa81f2c02b36ccd3ce58c60f0f89683e
 URL:		http://inter7.com/qmailadmin/
 Requires:	qmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
