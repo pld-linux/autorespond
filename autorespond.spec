@@ -5,8 +5,6 @@ Version:	2.0.2
 Release:	1
 License:	GPL
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	http://www.inter7.com/devel/%{name}-%{version}.tar.gz
 URL:		http://inter7.com/qmailadmin/
 Requires:	qmail
