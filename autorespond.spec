@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.inter7.com/devel/%{name}-%{version}.tar.gz
 # Source0-md5:	aa81f2c02b36ccd3ce58c60f0f89683e
+Patch0:		%{name}.stupidity.patch
 URL:		http://inter7.com/qmailadmin/
 Requires:	qmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,6 +37,7 @@ masowe pierwszeñstwo nag³ówków, itp.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
