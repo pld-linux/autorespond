@@ -1,0 +1,1 @@
+- pass CC=%{__cc} to make parameters and adapterize spec.
