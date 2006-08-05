@@ -42,7 +42,7 @@ masowe pierwszeñstwo nag³ówków, itp.
 %build
 %{__make} \
 	CFLAGS="%{rpmcflags} -D_REENTRANT" \
-	CC=%"{__cc}"
+	CC="%{__cc}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
