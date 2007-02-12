@@ -1,5 +1,5 @@
 Summary:	Simple autoresponder for qmail
-Summary(pl):	Prosty autoresponder dla qmaila
+Summary(pl.UTF-8):   Prosty autoresponder dla qmaila
 Name:		autorespond
 Version:	2.0.2
 Release:	1
@@ -24,16 +24,16 @@ This autoresponder also catches some other simple situations such as
 mail from a mailer-daemon, empty envelope sender, bulk precedence
 headers, etc.
 
-%description -l pl
-Scenariusz: poczta jest wysy³ana pod adres pomoc@moja-firma.com.
-Automatycznie przygotowana odpowied¼ jest wysy³ana nadawcy z tego
-w³a¶nie adresu. Mo¿esz równie¿ ustawiæ pusty adres nadawcy. Jednak
-pamiêtaj, ¿e niektóre programy sprawdzaj± ten adres nadawcy, i je¿eli
-jest on pusty, list mo¿e siê odbiæ, powoduj±c pêtlê.
+%description -l pl.UTF-8
+Scenariusz: poczta jest wysyÅ‚ana pod adres pomoc@moja-firma.com.
+Automatycznie przygotowana odpowiedÅº jest wysyÅ‚ana nadawcy z tego
+wÅ‚aÅ›nie adresu. MoÅ¼esz rÃ³wnieÅ¼ ustawiÄ‡ pusty adres nadawcy. Jednak
+pamiÄ™taj, Å¼e niektÃ³re programy sprawdzajÄ… ten adres nadawcy, i jeÅ¼eli
+jest on pusty, list moÅ¼e siÄ™ odbiÄ‡, powodujÄ…c pÄ™tlÄ™.
 
-Autoresponder sprawdza siê równie¿ w innych sytuacjach, takich jak:
-listy od programu pocztowego, generowanie pustych nag³ówków koperty,
-masowe pierwszeñstwo nag³ówków, itp.
+Autoresponder sprawdza siÄ™ rÃ³wnieÅ¼ w innych sytuacjach, takich jak:
+listy od programu pocztowego, generowanie pustych nagÅ‚Ã³wkÃ³w koperty,
+masowe pierwszeÅ„stwo nagÅ‚Ã³wkÃ³w, itp.
 
 %prep
 %setup -q
