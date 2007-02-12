@@ -1,5 +1,5 @@
 Summary:	Simple autoresponder for qmail
-Summary(pl.UTF-8):   Prosty autoresponder dla qmaila
+Summary(pl.UTF-8):	Prosty autoresponder dla qmaila
 Name:		autorespond
 Version:	2.0.2
 Release:	1
